@@ -1,15 +1,7 @@
-require 'bundler'
-Bundler.require
+#womp womp, so lonely :(
 
-ActiveRecord::Base.establish_connection(
-  :adapter => 'postgresql',
-  :database => 'chicago_recs'
-)
 
-get '/' do
-  return 'Test'
-end
 
-get '/api' do
-  Recommendation.all.to_json
-end
+# get '/' do
+#   return 'test'
+# end
